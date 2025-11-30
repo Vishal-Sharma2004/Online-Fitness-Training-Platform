@@ -4,6 +4,7 @@ The Online Fitness Training Platform is a web-based system designed to provide p
 A modern digital platform built to connect fitness trainers with clients seeking structured workout plans and coaching. This system digitizes workout programs, session bookings, and progress tracking to make fitness training more personalized, accessible, and result-oriented.​
 
 🚀 Overview
+
 The FitSphere Online Fitness Training Platform replaces outdated, manual gym and coaching workflows with an integrated digital solution. Users can discover trainers, enroll in fitness programs, track their workouts, and communicate directly through the platform — all from a single application.​
 This project demonstrates how technology can simplify fitness management for trainers and create a more engaging experience for clients working toward their health and performance goals.​
 
@@ -100,6 +101,7 @@ Cloud deployment for better reliability, backups, and remote access.​
 Mobile app version for Android/iOS for on-the-go access.​
 
 🧾 Conclusion
+
 The FitSphere Online Fitness Training Platform transforms how trainers and clients connect by making fitness management:
 
 Faster and more convenient.​
