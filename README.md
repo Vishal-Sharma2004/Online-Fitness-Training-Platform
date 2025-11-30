@@ -14,9 +14,13 @@ This project demonstrates how technology can simplify fitness management for tra
 ❗ Problems with Traditional Training
 
 • Requires visiting gyms or studios physically for every session.​
+
 • Paper-based workout plans and attendance registers.​
+
 • Limited visibility into client progress and adherence.​
+
 • Poor communication between trainers and clients outside gym hours.​
+
 • No centralized record of plans, payments, and performance metrics.​
 
 
