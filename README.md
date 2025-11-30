@@ -10,6 +10,7 @@ A modern digital platform built to connect fitness trainers with clients seeking
 The FitSphere Online Fitness Training Platform replaces outdated, manual gym and coaching workflows with an integrated digital solution. Users can discover trainers, enroll in fitness programs, track their workouts, and communicate directly through the platform — all from a single application.​
 This project demonstrates how technology can simplify fitness management for trainers and create a more engaging experience for clients working toward their health and performance goals.​
 
+
 ❗ Problems with Traditional Training
 
 • Requires visiting gyms or studios physically for every session.​
@@ -21,6 +22,7 @@ This project demonstrates how technology can simplify fitness management for tra
 • Poor communication between trainers and clients outside gym hours.​
 
 • No centralized record of plans, payments, and performance metrics.​
+
 
 💡 Digital Solution
 
@@ -34,25 +36,35 @@ This project demonstrates how technology can simplify fitness management for tra
 
 • Secure storage of user profiles, plans, and training history.​
 
+
 🧑‍💻 User Roles & Dashboards
 
 🔹 Admin
 
 → Manage user accounts (trainers and clients).​
+
 → Configure subscription plans, packages, and global settings.​
+
 → Monitor overall platform activity, reports, and analytics.​
+
 
 🔹 Trainer
 
 → Create, assign, and update workout and nutrition plans.​
+
 → Manage client lists, schedule sessions, and mark attendance.​
+
 → Track client progress and communicate via in-app messages or notes.​
+
 
 🔹 Client
 
 → View assigned workout plans and daily routines.​
+
 → Book training sessions and check upcoming schedule.​
+
 → Track progress (completed workouts, body stats, achievements) in real time.​
+
 
 🏗 Architecture
 
@@ -61,6 +73,7 @@ This project demonstrates how technology can simplify fitness management for tra
 • Centralized database for users, plans, bookings, and progress logs.​
 
 • Modular, scalable codebase separating UI, business logic, and data access.​
+
 
 🛠 Technology Stack
 
@@ -71,6 +84,7 @@ This project demonstrates how technology can simplify fitness management for tra
 • Database: MySQL / SQLite for persistent data storage.​
 
 • Software Design: OOP principles and layered architecture.​
+
 
 📌 Features
 
@@ -84,6 +98,7 @@ This project demonstrates how technology can simplify fitness management for tra
 
 • Basic reporting and summaries for admins and trainers.​
 
+
 🔮 Future Enhancements
 
 • In-app notification system for session reminders and plan updates.​
@@ -96,6 +111,7 @@ This project demonstrates how technology can simplify fitness management for tra
 ​
 • Mobile app version for Android/iOS for on-the-go access.​
 
+
 🧾 Conclusion
 
 The FitSphere Online Fitness Training Platform transforms how trainers and clients connect by making fitness management:
@@ -107,5 +123,6 @@ The FitSphere Online Fitness Training Platform transforms how trainers and clien
 • More transparent with visible progress and clear communication.​
 
 • More accessible to users regardless of location.​
+
 
 ✨ This system aims to improve training outcomes, increase client engagement, and help more people achieve their fitness goals effectively.
