@@ -1,9 +1,4 @@
-Got it 👍
-You want this **created for your actual project: *Online Fitness Tracker***, not the pet adoption one.
 
-Below is a **complete, college-ready Online Fitness Tracker project** designed exactly at **BTech CSE level**, using **Java + JavaFX + SQLite/MySQL**, with **role-based dashboards**, just like your earlier requirements.
-
----
 
 # 🏋️‍♂️ FitSphere – Online Fitness Tracker System
 
