@@ -1,236 +1,235 @@
-🏋️‍♂️ FitSphere – Online Fitness Tracking Platform
 
-FitSphere is a modern, role-based online fitness tracking application developed using Java and JavaFX. It helps users log workouts, track progress, and manage fitness activities through a centralized and user-friendly system.
+# 🏋️‍♂️ FitSphere – Online Fitness Tracking Platform
 
-🚀 Project Overview
+FitSphere is a modern, role-based online fitness tracking application developed using **Java and JavaFX**. It helps users log workouts, track progress, and manage fitness activities through a centralized and user-friendly system.
 
-FitSphere is a comprehensive online fitness tracking web application that allows users to log workouts, track progress, and participate in fitness challenges. Administrators can manage users, fitness content, and system settings.
+---
+
+## 🚀 Project Overview
+
+FitSphere is a comprehensive online fitness tracking application that allows users to log workouts, track progress, and manage fitness activities. The system supports multiple roles such as **Admin, Trainer, and User**, each with dedicated dashboards. Administrators can manage users and system settings, trainers can manage workout plans, and users can track their fitness journey.
+
+---
 
 ## ✨ Features
 
 ### 👤 User Features
-- **Workout Logging**: Log workouts with type, duration, intensity, and calories
-- **Progress Tracking**: Visualize fitness progress with charts and statistics
-- **Fitness Challenges**: Join and participate in fitness challenges
-- **Profile Management**: Update personal information and fitness goals
-- **Dashboard**: Overview of fitness statistics and recent activities
+
+* Workout logging with type, duration, and intensity
+* Progress tracking with historical records
+* Personal dashboard for fitness overview
+* Profile management
+* Secure authentication
+
+### 🧑‍🏫 Trainer Features
+
+* Manage workout plans
+* Monitor user performance
+* Assign workouts to users
 
 ### 👑 Admin Features
-- **User Management**: Create, update, delete, and manage user accounts
-- **Content Management**: Approve or reject fitness content submissions
-- **System Settings**: Configure application-wide settings
-- **Statistics Dashboard**: View platform analytics and user engagement
-- **Activity Monitoring**: Track system changes and user activities
+
+* User and trainer management
+* System monitoring
+* Database management
+* Dashboard access for system overview
+
+---
 
 ## 🏗️ Technology Stack
 
 ### Frontend
-- **HTML5** - Markup structure
-- **CSS3** - Styling with custom styles and Bootstrap
-- **JavaScript** - Client-side functionality
-- **Bootstrap 5** - Responsive UI framework
-- **Chart.js** - Data visualization for progress tracking
-- **Font Awesome** - Icon library
+
+* **JavaFX** – UI development
+* **FXML** – UI layout design
+* **CSS** – Styling and responsiveness
 
 ### Backend
-- **Java Servlets** - Request handling
-- **JSP (JavaServer Pages)** - Dynamic page rendering
-- **JSTL** - JSP Standard Tag Library
+
+* **Java** – Core logic
+* **MVC Architecture** – Clean code structure
 
 ### Database
-- **MySQL 8.0** - Relational database management
-- **JDBC** - Database connectivity
 
-### Tools & Libraries
-- **Apache Tomcat 9.x** - Application server
-- **Maven** - Dependency management (optional)
-- **BCrypt** - Password hashing
-- **Eclipse/IntelliJ IDEA** - Development IDE
+* **SQLite** – Lightweight embedded database
+* **JDBC** – Database connectivity
 
-## 📁 Project Structure
+### Tools
+
+* **Eclipse / IntelliJ IDEA**
+* **Scene Builder**
+* **Git & GitHub**
+
+---
+
+## 📁 Project Folder Structure
 
 ```
 FitSphere/
+│
 ├── src/
-│   └── com/fitsphere/
-│       ├── controller/     # Servlet controllers
-│       ├── dao/           # Data Access Objects
-│       ├── model/         # Java Beans
-│       └── util/          # Utility classes
-├── WebContent/
-│   ├── WEB-INF/
-│   │   ├── lib/           # Library JAR files
-│   │   └── web.xml        # Deployment descriptor
-│   ├── admin/             # Admin JSP pages
-│   ├── user/              # User JSP pages
-│   ├── css/               # Stylesheets
-│   ├── js/                # JavaScript files
-│   └── assets/            # Images and static files
-├── database/              # SQL scripts
-└── README.md             # This file
+│   ├── application/
+│   │   └── Main.java
+│   │
+│   ├── controllers/
+│   │   ├── AdminController.java
+│   │   ├── TrainerController.java
+│   │   └── UserController.java
+│   │
+│   ├── models/
+│   │   ├── User.java
+│   │   ├── Workout.java
+│   │   └── Progress.java
+│   │
+│   ├── services/
+│   │   ├── AuthService.java
+│   │   ├── WorkoutService.java
+│   │   └── ProgressService.java
+│   │
+│   └── utils/
+│       └── DBConnection.java
+│
+├── resources/
+│   ├── fxml/
+│   │   ├── login.fxml
+│   │   ├── admin_dashboard.fxml
+│   │   ├── trainer_dashboard.fxml
+│   │   └── user_dashboard.fxml
+│   │
+│   └── styles/
+│       └── style.css
+│
+├── database/
+│   └── fitsphere.db
+│
+└── README.md
 ```
+
+---
 
 ## 🚀 Installation & Setup
 
 ### Prerequisites
-- Java JDK 11 or higher
-- Apache Tomcat 9.x
-- MySQL 8.0
-- Eclipse IDE or IntelliJ IDEA
-- MySQL Workbench (optional)
 
-### Step 1: Database Setup
+* Java JDK 11 or higher
+* Eclipse or IntelliJ IDEA
+* JavaFX SDK
+* SQLite Database
+* Scene Builder
 
-1. Install MySQL and start the MySQL service
-2. Open MySQL Workbench or command line
-3. Create the database:
-```sql
-CREATE DATABASE fitsphere;
-USE fitsphere;
+---
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/your-username/FitSphere.git
 ```
 
-4. Run the SQL script from `database/fitsphere_schema.sql`
+---
 
-### Step 2: IDE Configuration
+### Step 2: Configure JavaFX
 
-#### For Eclipse:
-1. Open Eclipse IDE
-2. Create a new **Dynamic Web Project** named "FitSphere"
-3. Configure project structure as shown above
-4. Set Target Runtime to Apache Tomcat 9.x
+* Download JavaFX SDK
+* Add VM options:
 
-#### For IntelliJ IDEA:
-1. Open IntelliJ IDEA
-2. Create new project → Java Enterprise → Web Application
-3. Name the project "FitSphere"
-4. Configure Application Server as Tomcat 9.x
-
-### Step 3: Add Required Libraries
-
-Add the following JAR files to `WEB-INF/lib/` folder:
-
-1. **MySQL Connector**: `mysql-connector-java-8.0.33.jar`
-2. **BCrypt**: `jbcrypt-0.4.jar`
-3. **Servlet API**: `javax.servlet-api-4.0.1.jar`
-4. **JSTL**: `jstl-1.2.jar`
-
-### Step 4: Database Configuration
-
-Update database credentials in `src/com/fitsphere/util/DatabaseConnection.java`:
-
-```java
-private static final String URL = "jdbc:mysql://localhost:3306/fitsphere";
-private static final String USERNAME = "your_username";
-private static final String PASSWORD = "your_password";
+```
+--module-path /path/to/javafx/lib --add-modules javafx.controls,javafx.fxml
 ```
 
-### Step 5: Deploy and Run
+---
 
-1. Build the project
-2. Deploy to Tomcat server
-3. Start Tomcat server
-4. Access the application at:
-   ```
-   http://localhost:8080/FitSphere
-   ```
+### Step 3: Database Setup
+
+* SQLite database file is located in:
+
+```
+database/fitsphere.db
+```
+
+* Database connection is handled in:
+
+```
+utils/DBConnection.java
+```
+
+---
+
+### Step 4: Run the Application
+
+* Open `Main.java`
+* Run as Java Application
+
+---
 
 ## 🔐 Default Credentials
 
-### Admin Account
-- **Email**: `admin@fitsphere.com`
-- **Password**: `admin123`
+### Admin
 
-### User Account
-- **Email**: `john@example.com`
-- **Password**: `user123`
+* **Username:** admin
+* **Password:** admin123
 
-## 📊 Database Schema
+### User
 
-The application uses the following main tables:
+* **Username:** user
+* **Password:** user123
 
-### Users Table
-Stores user information including name, email, password, role, and fitness details.
+---
 
-### Workouts Table
-Tracks workout sessions with type, duration, intensity, calories burned, and date.
+## 📊 Database Tables
 
-### Challenges Table
-Manages fitness challenges with title, description, type, target value, and duration.
+* **User** – Stores user credentials and role
+* **Workout** – Stores workout details
+* **Progress** – Tracks fitness progress
 
-### Challenge Participants Table
-Tracks user participation in challenges with progress status.
-
-### Fitness Content Table
-Stores user-submitted fitness content for admin approval.
-
-### System Settings Table
-Manages application configuration settings.
+---
 
 ## 🎨 User Interface
 
-### Login Page
-- Clean, modern login interface
-- Form validation
-- Remember me functionality (optional)
+### Login Screen
+
+* Secure authentication
+* Role-based redirection
 
 ### User Dashboard
-- Overview of fitness statistics
-- Recent workout history
-- Active challenges
-- Progress charts
+
+* Workout history
+* Progress tracking
+
+### Trainer Dashboard
+
+* Workout assignment
+* User monitoring
 
 ### Admin Dashboard
-- User management interface
-- Content approval system
-- System statistics
-- Activity logs
 
-## 🛠️ Development
+* User management
+* System overview
+
+---
+
+## 🛠️ Development Guidelines
+
+### MVC Architecture
+
+* **Model** – Data handling
+* **View** – FXML files
+* **Controller** – Business logic
 
 ### Adding New Features
 
-1. **Create Model Class**: Add new Java bean in `model/` package
-2. **Create DAO Class**: Implement data access logic in `dao/` package
-3. **Create Controller**: Add new Servlet in `controller/` package
-4. **Create JSP Page**: Design frontend interface in appropriate folder
-5. **Update Database**: Add new tables/columns in SQL script
-
-### Code Structure
-
-```java
-// Model Example
-public class Workout {
-    private int workoutId;
-    private String workoutType;
-    // ... other fields, getters, setters
-}
-
-// DAO Example
-public class WorkoutDAO {
-    public boolean addWorkout(Workout workout) {
-        // JDBC code with prepared statements
-    }
-}
-
-// Controller Example
-@WebServlet("/workout/*")
-public class WorkoutController extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) {
-        // Handle form submissions
-    }
-}
-```
----
-🎯 Conclusion
-
-FitSphere successfully converts traditional fitness tracking into a structured, digital, and efficient system. It improves workout management, enhances progress visibility, and provides a scalable foundation for future development.
-
-Track Smarter • Train Better • Transform Your Health 🏋️‍♂️💪
+1. Create model class
+2. Add service logic
+3. Update controller
+4. Design FXML
+5. Update database
 
 ---
 
-**FitSphere** - Track Your Fitness, Transform Your Life! 🏃‍♀️💪
+## 🎯 Conclusion
+
+FitSphere successfully converts traditional fitness tracking into a **structured, digital, and efficient system**. It improves workout management, enhances progress visibility, and provides a scalable foundation for future development.
+
+**Track Smarter • Train Better • Transform Your Health** 🏋️‍♂️💪
 
 ---
-*Last Updated: December 2024*
-*Version: 1.0.0*
+
