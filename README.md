@@ -14,9 +14,13 @@ FitSphere digitizes fitness management by allowing users to monitor workouts and
 ## 💡 **Key Features**
 
 ✔ Secure login with role-based access
+
 ✔ Workout logging and history
+
 ✔ Real-time progress visualization
+
 ✔ Fitness challenges and rewards
+
 ✔ Admin monitoring and analytics
 
 ---
